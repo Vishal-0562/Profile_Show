@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ body{
+    background: linear-gradient(0deg, #321b13 25%,#c74a14 75%,#010A10 100%);
+    background-repeat: no-repeat;
+    font-family: 'El Messiri', sans-serif;
+ }
+
+.redcir{
+    position: absolute;
+    width: 15em;
+    height:15em;
+    border-radius: 50%;
+    top: 6%;
+    left: 30%;
+    box-shadow: 0 0 60px rgba(255, 132, 0, 0.845);
+    background: linear-gradient(10deg, rgb(255, 170, 0),rgb(255, 0, 0));
+    animation: circleRed 20s infinite;
+}
+@keyframes circleRed {
+    50%{    
+        left:35%;
+        top:4%;
+        scale: .9;
+    }
+}
+
+.purplecir{
+    position: absolute;
+    width: 15em;
+    height:15em;
+    border-radius: 50%;
+    bottom: 4%;
+    right: 20%;
+    box-shadow: 0 0 60px rgba(161, 214, 212, 0.845);
+    background: linear-gradient(-75deg,rgba(161, 214, 212, 0.845),rgba(2, 248, 228, 0.879));
+    animation: circlePurple 25s infinite;
+}
+
+@keyframes circlePurple {
+    50%{    
+        bottom:7%;
+        right:30%;
+        scale:1.1;
+    }
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+}
+.card{
+    position: absolute;
+    height: 450px;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    border:2px solid #ffffff30;
+    align-items: center;
+    justify-content: space-evenly;
+    translate: -50% -50%;
+    border-radius: 15px;
+    background: #ffffff30;
+    padding: 20px 50px;
+    backdrop-filter: blur(10px);
+}
+.card div img{
+    width: 150px;
+    height: 150px;
+    border: 2px solid #ffffff30;
+    border-radius: 50%;
+}
+.user-name h2{
+    color: #ffffffcf;
+    text-align: center;
+    font-size: 2rem;
+}
+.designation h3{
+    color:#f5f5f5cf;
+    text-align: center;
+}
+
+.group-btn{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.card-share-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 12px;
+    background:#ffffff00;
+    color:#ffffffb9 ;
+    border: 2px solid #ffffffb9;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.follow {
+    text-transform: capitalize;
+    width: 150px;
+    padding: 9px 12px;
+    background: #ffffff00;
+    border: 2px solid #ffffffb9;
+    border-radius: 4px;
+    color: #ffffffb9;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.btn-card:hover{
+    background:#ffffffb9;
+    color: #0e0d0db9;
+}
+
+.model{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height:auto;
+    background:#101112a0;
+    color: rgba(240, 248, 255, 0.687);
+    padding: 9px 15px;
+    border: 2px solid #ffffff30;
+    border-radius: 15px;
+    z-index: 1;
+    translate: -50% -50%;
+    backdrop-filter: blur(15px);
+    transition: .5s ease-in-out;
+    scale: 0;
+}
+.model-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 12px;
+    border-bottom: 1px solid #ffffff88;
+    border-radius: 5px;
+}
+.model-header i{
+    color:#ffffffbe;
+    font-size:30px;
+    cursor: pointer;
+}
+.model h3{
+    padding: 10px 0 0 15px;
+}
+
+.model .icon-container{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+padding: 10px 15px;
+}
+
+.icon{
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    padding: 17px;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+    text-decoration: none;
+}
+.icon i{
+    font-size: 28px;
+}
+
+#facebook {
+    color: #1771e6;
+    border: 1px solid #1771e6;
+  }
+#facebook:hover {
+    background-color: #1771e6;
+    color: #fff;
+  }
+  
+#twitter {
+    color: #1c99e6;
+    border: 1px solid #1c99e6;
+  }
+#twitter:hover {
+    background-color: #1c99e6;
+    color: #fff;
+  }
+  
+#instagram {
+    color: #cb2770;
+    border: 1px solid #cb2770;
+  }
+#instagram:hover {
+    background-color: #cb2770;
+    color: #fff;
+}
+#linkedin{
+    color: #0270ad;
+    border: 1px solid #0270ad;
+  }
+#linkedin:hover {
+    background-color: #0270ad;
+    color: #fff;
+}
+
+#github{
+    color: #000000;
+    border: 1px solid #000000;
+  }
+#github:hover {
+    background-color: #000000;
+    color: #fff;
+}
+ 
+
+.active{
+    scale: 1;
+}
+
+.overlay{
+position: fixed;
+background: #010A10;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #5f5f5f83;
+transition: .5s ease-in-out;
+pointer-events: none;
+opacity: 0;
+}
+
+.overlayactive{
+    opacity: 1;
+    pointer-events:initial;
+}
+
+@media(max-width: 850px){
+    .card{
+        max-width: 250px;
+        width: 300px;
+    }
+    .group-btn{
+        flex-direction: column;
+    }
+    .model{
+        width: 70vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      position: static;
+      top: 0;
+      left: 0;
+      translate: 0 0;
+      margin: 0 12px;
+      padding: 0 10px;
+    }
+    .card div img {
+      width: 120px;
+      height: 120px;
+    }
+    .user-name h2 {
+      font-size: 1.3rem;
+    }
+    .model {
+      width: 70vw;
+    }
+  }
+
+
+
+
+

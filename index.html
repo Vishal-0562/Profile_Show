@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Singh Profile Show</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="redcir"></div>
+    <div class="purplecir"></div>
+    <div class="wrapper">
+        <div class="card">
+            <div>
+                <img src="/img.jpg" alt="photo">
+            </div>
+            <div class="user-name">
+                <h2>Vishal Singh</h2>
+            </div>
+            <div class="designation">
+                <h3>Software Engineer</h3>
+            </div>
+            <div class="group-btn">
+                <button onclick="openProfile()" class="card-share-btn btn-card"><i class='bx bxs-share'></i><div>Share my profile</div></button>
+                <a href="https://www.linkedin.com/in/vishalsingh0562/" target="_blank"><button class="follow btn-card">Follow Me</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="model">
+        <div class="model-header">
+            <h1>Share My Profile</h1>
+            <div class="cross">
+                <i class='bx bx-window-close' onclick="closeModel()"></i>
+            </div>
+        </div>
+        <h3>Share by this link</h3>
+        <div class="icon-container">
+                <a href="https://www.facebook.com/profile.php?id=100012722704452" id="facebook" class="icon">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+                <a href="https://www.instagram.com/vishal_singh_0562/" id="instagram" class="icon">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="https://twitter.com/VishalS15017218" id="twitter" class="icon">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="https://www.linkedin.com/in/vishalsingh0562/" id="linkedin" class="icon">
+                    <i class='bx bxl-linkedin-square'></i>
+                </a>
+                <a href="https://github.com/Vishal-0562" id="github" class="icon">
+                    <i class='bx bxl-github'></i>
+                </a>
+        </div>
+    </div>
+    <div class="overlay" onclick="closeModel()"></div>
+    <script src="./index.js  "></script>
+</body>
+</html>
